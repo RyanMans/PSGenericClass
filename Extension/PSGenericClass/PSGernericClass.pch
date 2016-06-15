@@ -1,0 +1,25 @@
+//
+//  PSGernericClass.pch
+//  PSGenericClass
+//
+//  Created by Ryan_Man on 16/5/11.
+//  Copyright © 2016年 Ryan_Man. All rights reserved.
+//
+
+#ifndef PSGernericClass_pch
+#define PSGernericClass_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "PSHeader.h"
+#import "HttpServe/Httpserve.h"
+#import "PSLocalDataStorage.h"
+
+//第三方
+#import "MJExtension.h"
+#import "FMDB.h"
+#import "YYModel.h"
+#import "PinYin4Objc.h"
+#import "AFNetworking.h"
+
+#endif /* PSGernericClass_pch */
