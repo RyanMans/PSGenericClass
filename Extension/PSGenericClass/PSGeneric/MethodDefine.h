@@ -1,11 +1,10 @@
 //
 //  MethodDefine.h
-//  aaa
+//  PSGenericClass
 //
-//  Created by ibos on 16/2/26.
-//  Copyright © 2016年 ibos. All rights reserved.
+//  Created by Ryan_Man on 16/6/17.
+//  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
-
 #ifndef MethodDefine_h
 #define MethodDefine_h
 

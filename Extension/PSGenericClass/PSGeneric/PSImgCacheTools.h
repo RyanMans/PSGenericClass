@@ -1,10 +1,11 @@
 //
 //  PSImgCacheTools.h
-//  HeartDoctor
+//  PSGenericClass
 //
-//  Created by Ryan_Man on 16/5/6.
+//  Created by Ryan_Man on 16/6/17.
+//  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
-//
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>

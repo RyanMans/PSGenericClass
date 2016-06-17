@@ -12,6 +12,7 @@
 
 
 //自定义类库
+#import "PSMsg.h"
 #import "PSCategory.h"
 #import "MethodDefine.h"
 #import "PSDataStorage.h"

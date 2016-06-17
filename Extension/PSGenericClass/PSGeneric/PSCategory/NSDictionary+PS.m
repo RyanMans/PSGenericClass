@@ -1,9 +1,9 @@
 //
 //  NSDictionary+PS.m
-//  aaa
+//  PSGenericClass
 //
-//  Created by ibos on 16/2/26.
-//  Copyright © 2016年 ibos. All rights reserved.
+//  Created by Ryan_Man on 16/6/14.
+//  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
 
 #import "NSDictionary+PS.h"

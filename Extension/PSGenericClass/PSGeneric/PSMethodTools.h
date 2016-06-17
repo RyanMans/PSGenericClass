@@ -1,9 +1,9 @@
 //
-//  MethodTools.h
-//  Method
+//  PSMethodTools.h
+//  PSGenericClass
 //
-//  Created by ibos on 15/12/14.
-//  Copyright © 2015年 ibos. All rights reserved.
+//  Created by Ryan_Man on 16/6/17.
+//  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
 
 #ifndef MethodTools_h
@@ -80,31 +80,6 @@ void openEmail(NSString *email);
  *  @param appid APPID
  */
 void gotoAppStore(NSString *appid);
-
-
-#pragma mark -NSNotificationCenter -
-/**
- *  添加一个消息监听到通知中心
- *
- *  @param observer
- *  @param selector
- *  @param name     监听的名字
- */
-void addPost(id observer, SEL selector,NSString *name);
-/**
- *  通过名字删除消息监听
- *
- *  @param observer
- *  @param name     监听的名字
- */
-void removePost(id observer,NSString *name);
-/**
- *  发送一个消息监听
- *
- *  @param name   监听的名字
- *  @param object 发送的数据，没有就填nil
- */
-void post(NSString *name,id object);
 
 #pragma mark -时间处理 -
 /**

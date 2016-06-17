@@ -183,6 +183,7 @@
         //删除联系人 ，使用广播中心刷新页面
         
         [PSLocalDataStorageInstance removeMobileContactMessage:IsSafeString(_contactModel.recordID)];
+        
         [PSMsgCenterInstance sendMessage:MsgTypeMobileContactNeedReload userParam:nil];
         
         [self.navigationController popViewControllerAnimated:YES];

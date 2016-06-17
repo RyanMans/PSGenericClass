@@ -1,10 +1,11 @@
 //
-//  MethodTools.m
-//  Method
+//  PSMethodTools.m
+//  PSGenericClass
 //
-//  Created by ibos on 15/12/14.
-//  Copyright © 2015年 ibos. All rights reserved.
+//  Created by Ryan_Man on 16/6/17.
+//  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "PSMethodTools.h"
@@ -64,28 +65,6 @@ void gotoAppStore(NSString *appid)
 {
     NSString *url = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@?mt=8",appid];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-}
-
-#pragma mark -NSNotificationCenter-
-void addPost(id observer, SEL selector,NSString *name)
-{
-    [[NSNotificationCenter defaultCenter] addObserver:observer selector:selector name:name object:nil];
-}
-
-void post(NSString *name,id object)
-{
-    [[NSNotificationCenter defaultCenter] postNotificationName:name object:object];
-}
-
-void removePost(id observer,NSString *name)
-{
-    if (name == nil || name.length == 0)
-    {
-        [[NSNotificationCenter defaultCenter] removeObserver:observer];
-    }
-    else{
-        [[NSNotificationCenter defaultCenter] removeObserver:observer name:name object:nil];
-    }
 }
 
 #pragma mark -时间 处理-

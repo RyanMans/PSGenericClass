@@ -1,13 +1,15 @@
 //
 //  PSMsgCenter.m
-//  EJY
+//  PSGenericClass
 //
-//  Created by Ryan_Man on 16/4/13.
+//  Created by Ryan_Man on 16/6/17.
 //  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
-
 #import "PSMsgCenter.h"
-
+#import "PSMethodTools.h"
+/**
+ *  消息对象
+ */
 @interface PSMsgObject : NSObject
 @property (nonatomic,weak,readonly)id object;
 @end
@@ -34,6 +36,7 @@
     NSMutableDictionary *_receivers;
 }
 @end
+
 @implementation PSMsgCenter
 - (instancetype)init
 {
@@ -50,7 +53,7 @@
     static PSMsgCenter * _msgCenter = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-       _msgCenter  = [[PSMsgCenter alloc] init];
+        _msgCenter  = [[PSMsgCenter alloc] init];
     });
     return _msgCenter;
 }
@@ -75,7 +78,7 @@
     runBlockWithAsync(^{[self dispatchMessage:msg userParam:param];});
 }
 
-- (BOOL)addReceiver:(id<MsgDispatcherDelegate>)obj type:(NSString *)type
+- (BOOL)addReceiver:(id<PSMsgDispatcherDelegate>)obj type:(NSString *)type
 {
     NSMutableArray * temp = _receivers[type];
     
@@ -94,8 +97,31 @@
     
     for (PSMsgObject * ps in temp)
     {
-        id<MsgDispatcherDelegate> obj = ps.object;
+        id<PSMsgDispatcherDelegate> obj = ps.object;
         [obj didReceivedMessage:msg msgDispatcher:self userParam:param];
+    }
+}
+
+
+#pragma mark -NSNotificationCenter-
+void addPost(id observer, SEL selector,NSString *name)
+{
+    [[NSNotificationCenter defaultCenter] addObserver:observer selector:selector name:name object:nil];
+}
+
+void post(NSString *name,id object)
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:name object:object];
+}
+
+void removePost(id observer,NSString *name)
+{
+    if (name == nil || name.length == 0)
+    {
+        [[NSNotificationCenter defaultCenter] removeObserver:observer];
+    }
+    else{
+        [[NSNotificationCenter defaultCenter] removeObserver:observer name:name object:nil];
     }
 }
 @end

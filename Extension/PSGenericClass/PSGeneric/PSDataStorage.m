@@ -1,10 +1,11 @@
 //
 //  PSDataStorage.m
-//  EJY
+//  PSGenericClass
 //
-//  Created by Ryan_Man on 16/4/14.
+//  Created by Ryan_Man on 16/6/17.
 //  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
+
 
 #import "PSDataStorage.h"
 #include <sqlite3.h>
@@ -34,7 +35,7 @@
 
 - (NSMutableDictionary *)toDictionary
 {
-    NSMutableDictionary *temp = NewMutableDictionary();
+    NSMutableDictionary *temp = [NSMutableDictionary new];
     NSDictionary *buffer = [self columnNameToIndexMap];
     NSDictionary * aaa = [self columnNameToIndexKey];
 

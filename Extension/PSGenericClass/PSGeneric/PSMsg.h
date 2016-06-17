@@ -1,8 +1,8 @@
 //
 //  PSMsg.h
-//  EJY
+//  PSGenericClass
 //
-//  Created by Ryan_Man on 16/4/13.
+//  Created by Ryan_Man on 16/6/17.
 //  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
 

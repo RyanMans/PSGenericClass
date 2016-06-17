@@ -1,13 +1,12 @@
 //
 //  PSFileManager.h
-//  NetEase
+//  PSGenericClass
 //
-//  Created by ibos on 15/8/26.
-//  Copyright (c) 2015年 ps. All rights reserved.
+//  Created by Ryan_Man on 16/6/17.
+//  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
 // 简写log宏
 #ifdef  DEBUG

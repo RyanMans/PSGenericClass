@@ -1,8 +1,8 @@
 //
 //  UIImage+PS.m
-//  EJY
+//  PSGenericClass
 //
-//  Created by admin on 16/4/6.
+//  Created by Ryan_Man on 16/6/14.
 //  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
 

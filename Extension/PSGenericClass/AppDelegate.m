@@ -22,7 +22,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = WhiteColor;
+    self.window.backgroundColor = [UIColor whiteColor];
     
     PSTabBarController * tb = [[PSTabBarController alloc] init];
     self.window.rootViewController = tb;
