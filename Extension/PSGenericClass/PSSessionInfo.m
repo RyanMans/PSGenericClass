@@ -11,7 +11,7 @@
 @interface UserSession ()
 //这里主要是一些全局性的类库 ，比如 网络，广播中心，数据库等，在这里我们只需要创建 PSSessionInfo一个单列就够了，当然对应的类库我也写了单列方法
 
-@property (nonatomic, strong) HttpBaseServe * httpServe;
+@property (nonatomic, strong) HttpBaseServer * httpServe;
 @property (nonatomic, strong) PSMsgCenter * msgCenter;
 @property (nonatomic, strong) PSLocalDataStorage * dataStorage;
 
@@ -40,7 +40,7 @@
     {
         _myInfo = NewClass(UserInfoModel);
         _msgCenter = NewClass(PSMsgCenter);
-        _httpServe = NewClass(HttpBaseServe);
+        _httpServe = NewClass(HttpBaseServer);
         _dataStorage = NewClass(PSLocalDataStorage);
     }
     return self;

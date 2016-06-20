@@ -12,6 +12,7 @@
 #import "NSString+PS.h"
 #import "NSData+PS.h"
 #import "NSDate+PS.h"
+#import "NSObject+PS.h"
 
 #import "NSArray+PS.h"
 #import "NSDictionary+PS.h"

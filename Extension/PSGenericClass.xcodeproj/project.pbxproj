@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150720301CE3175800A8D87D /* HttpBaseServe+PSMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1507202F1CE3175800A8D87D /* HttpBaseServe+PSMC.m */; };
-		150720311CE3175800A8D87D /* HttpBaseServe+PSMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1507202F1CE3175800A8D87D /* HttpBaseServe+PSMC.m */; };
-		150720321CE3175800A8D87D /* HttpBaseServe+PSMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1507202F1CE3175800A8D87D /* HttpBaseServe+PSMC.m */; };
 		150720381CE31C2200A8D87D /* PSLocalDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 150720371CE31C2200A8D87D /* PSLocalDataStorage.m */; };
 		1507203B1CE31D6400A8D87D /* PSSessionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1507203A1CE31D6400A8D87D /* PSSessionInfo.m */; };
 		1507203E1CE321CE00A8D87D /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1507203D1CE321CE00A8D87D /* UserInfoModel.m */; };
@@ -64,7 +61,6 @@
 		155576F01CE0695600AB0F7C /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 155576EA1CE0695600AB0F7C /* unicode_to_hanyu_pinyin.txt */; };
 		155576F31CE0697A00AB0F7C /* PSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155576F21CE0697A00AB0F7C /* PSBaseViewController.m */; };
 		155576F61CE0772A00AB0F7C /* PSContactAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 155576F51CE0772A00AB0F7C /* PSContactAccessoryView.m */; };
-		155577001CE0830300AB0F7C /* HttpBaseServe.m in Sources */ = {isa = PBXBuildFile; fileRef = 155576FF1CE0830300AB0F7C /* HttpBaseServe.m */; };
 		159F7A1D1D0EAB3300E3B4A2 /* AFDownloadRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 159F7A071D0EAB3300E3B4A2 /* AFDownloadRequestOperation.m */; };
 		159F7A1E1D0EAB3300E3B4A2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 159F7A091D0EAB3300E3B4A2 /* AFHTTPRequestOperation.m */; };
 		159F7A1F1D0EAB3300E3B4A2 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 159F7A0B1D0EAB3300E3B4A2 /* AFHTTPRequestOperationManager.m */; };
@@ -81,6 +77,9 @@
 		15BC067A1CBFA3F200CC34B7 /* PSDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BC06771CBFA3F200CC34B7 /* PSDataStorage.m */; };
 		15BC067B1CBFA3F200CC34B7 /* PSMsgCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BC06791CBFA3F200CC34B7 /* PSMsgCenter.m */; };
 		15BC06821CBFA76000CC34B7 /* PSMethodTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BC06811CBFA76000CC34B7 /* PSMethodTools.m */; };
+		15E63D921D17E810008617DB /* NSObject+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E63D911D17E810008617DB /* NSObject+PS.m */; };
+		15E63D9F1D17E9F6008617DB /* HttpBaseServer+PSMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E63D9B1D17E9F6008617DB /* HttpBaseServer+PSMC.m */; };
+		15E63DA01D17E9F6008617DB /* HttpBaseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E63D9D1D17E9F6008617DB /* HttpBaseServer.m */; };
 		840C79DA1CBCEFE700309ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C79D91CBCEFE700309ECD /* main.m */; };
 		840C79DD1CBCEFE700309ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C79DC1CBCEFE700309ECD /* AppDelegate.m */; };
 		840C79E01CBCEFE700309ECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C79DF1CBCEFE700309ECD /* ViewController.m */; };
@@ -111,8 +110,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1507202E1CE3175800A8D87D /* HttpBaseServe+PSMC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HttpBaseServe+PSMC.h"; sourceTree = "<group>"; };
-		1507202F1CE3175800A8D87D /* HttpBaseServe+PSMC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HttpBaseServe+PSMC.m"; sourceTree = "<group>"; };
 		150720351CE318E500A8D87D /* PSGernericClass.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGernericClass.pch; sourceTree = "<group>"; };
 		150720361CE31C2200A8D87D /* PSLocalDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLocalDataStorage.h; sourceTree = "<group>"; };
 		150720371CE31C2200A8D87D /* PSLocalDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLocalDataStorage.m; sourceTree = "<group>"; };
@@ -225,9 +222,6 @@
 		155576F21CE0697A00AB0F7C /* PSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBaseViewController.m; sourceTree = "<group>"; };
 		155576F41CE0772A00AB0F7C /* PSContactAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSContactAccessoryView.h; sourceTree = "<group>"; };
 		155576F51CE0772A00AB0F7C /* PSContactAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSContactAccessoryView.m; sourceTree = "<group>"; };
-		155576FE1CE0830300AB0F7C /* HttpBaseServe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpBaseServe.h; sourceTree = "<group>"; };
-		155576FF1CE0830300AB0F7C /* HttpBaseServe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpBaseServe.m; sourceTree = "<group>"; };
-		155577011CE0843F00AB0F7C /* Httpserve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Httpserve.h; sourceTree = "<group>"; };
 		159F7A061D0EAB3300E3B4A2 /* AFDownloadRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFDownloadRequestOperation.h; sourceTree = "<group>"; };
 		159F7A071D0EAB3300E3B4A2 /* AFDownloadRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFDownloadRequestOperation.m; sourceTree = "<group>"; };
 		159F7A081D0EAB3300E3B4A2 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -261,6 +255,14 @@
 		15BC067F1CBFA59700CC34B7 /* PSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSHeader.h; sourceTree = "<group>"; };
 		15BC06801CBFA76000CC34B7 /* PSMethodTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMethodTools.h; sourceTree = "<group>"; };
 		15BC06811CBFA76000CC34B7 /* PSMethodTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMethodTools.m; sourceTree = "<group>"; };
+		15E63D8F1D17E740008617DB /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		15E63D901D17E810008617DB /* NSObject+PS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PS.h"; sourceTree = "<group>"; };
+		15E63D911D17E810008617DB /* NSObject+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PS.m"; sourceTree = "<group>"; };
+		15E63D9A1D17E9F6008617DB /* HttpBaseServer+PSMC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HttpBaseServer+PSMC.h"; sourceTree = "<group>"; };
+		15E63D9B1D17E9F6008617DB /* HttpBaseServer+PSMC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HttpBaseServer+PSMC.m"; sourceTree = "<group>"; };
+		15E63D9C1D17E9F6008617DB /* HttpBaseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpBaseServer.h; sourceTree = "<group>"; };
+		15E63D9D1D17E9F6008617DB /* HttpBaseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpBaseServer.m; sourceTree = "<group>"; };
+		15E63D9E1D17E9F6008617DB /* HttpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpServer.h; sourceTree = "<group>"; };
 		840C79D51CBCEFE700309ECD /* PSGenericClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSGenericClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C79D91CBCEFE700309ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		840C79DB1CBCEFE700309ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -360,11 +362,13 @@
 		154447741CC0A44300B32C12 /* PSCategory */ = {
 			isa = PBXGroup;
 			children = (
+				1544477D1CC0A44300B32C12 /* PSCategory.h */,
+				15E63D901D17E810008617DB /* NSObject+PS.h */,
+				15E63D911D17E810008617DB /* NSObject+PS.m */,
 				1533AE8C1D0FE15D00041A9E /* UINavigationBar+PS.h */,
 				1533AE8D1D0FE15D00041A9E /* UINavigationBar+PS.m */,
 				1533AE841D0FA5B400041A9E /* UIImage+PS.h */,
 				1533AE851D0FA5B400041A9E /* UIImage+PS.m */,
-				1544477D1CC0A44300B32C12 /* PSCategory.h */,
 				155576C51CE02EE900AB0F7C /* NSString+PS.h */,
 				155576C61CE02EE900AB0F7C /* NSString+PS.m */,
 				154447751CC0A44300B32C12 /* NSArray+PS.h */,
@@ -469,18 +473,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		155576FD1CE082C200AB0F7C /* HttpServe */ = {
-			isa = PBXGroup;
-			children = (
-				155576FE1CE0830300AB0F7C /* HttpBaseServe.h */,
-				155576FF1CE0830300AB0F7C /* HttpBaseServe.m */,
-				1507202E1CE3175800A8D87D /* HttpBaseServe+PSMC.h */,
-				1507202F1CE3175800A8D87D /* HttpBaseServe+PSMC.m */,
-				155577011CE0843F00AB0F7C /* Httpserve.h */,
-			);
-			path = HttpServe;
-			sourceTree = "<group>";
-		};
 		159F7A041D0EAB3200E3B4A2 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,6 +516,7 @@
 			children = (
 				154447741CC0A44300B32C12 /* PSCategory */,
 				15BC067F1CBFA59700CC34B7 /* PSHeader.h */,
+				15E63D8F1D17E740008617DB /* typedef.h */,
 				1544476D1CC07CC600B32C12 /* MethodDefine.h */,
 				1544476E1CC07CC600B32C12 /* PSFileManager.h */,
 				1544476F1CC07CC600B32C12 /* PSFileManager.m */,
@@ -538,6 +531,18 @@
 				15BC06791CBFA3F200CC34B7 /* PSMsgCenter.m */,
 			);
 			path = PSGeneric;
+			sourceTree = "<group>";
+		};
+		15E63D991D17E9F6008617DB /* HttpServer */ = {
+			isa = PBXGroup;
+			children = (
+				15E63D9E1D17E9F6008617DB /* HttpServer.h */,
+				15E63D9C1D17E9F6008617DB /* HttpBaseServer.h */,
+				15E63D9D1D17E9F6008617DB /* HttpBaseServer.m */,
+				15E63D9A1D17E9F6008617DB /* HttpBaseServer+PSMC.h */,
+				15E63D9B1D17E9F6008617DB /* HttpBaseServer+PSMC.m */,
+			);
+			path = HttpServer;
 			sourceTree = "<group>";
 		};
 		840C79CC1CBCEFE700309ECD = {
@@ -563,7 +568,7 @@
 		840C79D71CBCEFE700309ECD /* PSGenericClass */ = {
 			isa = PBXGroup;
 			children = (
-				155576FD1CE082C200AB0F7C /* HttpServe */,
+				15E63D991D17E9F6008617DB /* HttpServer */,
 				155576CB1CE042CE00AB0F7C /* Mobels */,
 				155576CC1CE042CE00AB0F7C /* Views */,
 				1544478F1CC0A74E00B32C12 /* Controller */,
@@ -785,11 +790,11 @@
 				15BC06821CBFA76000CC34B7 /* PSMethodTools.m in Sources */,
 				155576CF1CE0430100AB0F7C /* PSLetterDisplayView.m in Sources */,
 				155576DB1CE05ED300AB0F7C /* PSMobileContactModel.m in Sources */,
-				155577001CE0830300AB0F7C /* HttpBaseServe.m in Sources */,
 				159F7A281D0EAB3300E3B4A2 /* README.md in Sources */,
 				840C79E01CBCEFE700309ECD /* ViewController.m in Sources */,
 				1553C8BF1D0818DF007E1F1B /* PSIntroduceModel.m in Sources */,
 				154447551CC07A9F00B32C12 /* NSObject+MJKeyValue.m in Sources */,
+				15E63DA01D17E9F6008617DB /* HttpBaseServer.m in Sources */,
 				840C79DD1CBCEFE700309ECD /* AppDelegate.m in Sources */,
 				155576F61CE0772A00AB0F7C /* PSContactAccessoryView.m in Sources */,
 				1553C8B91D0801CD007E1F1B /* PSClassViewController.m in Sources */,
@@ -818,6 +823,7 @@
 				159F7A1E1D0EAB3300E3B4A2 /* AFHTTPRequestOperation.m in Sources */,
 				154447A11CC0A95800B32C12 /* PSAppViewController.m in Sources */,
 				840C79DA1CBCEFE700309ECD /* main.m in Sources */,
+				15E63D921D17E810008617DB /* NSObject+PS.m in Sources */,
 				154447671CC07ABD00B32C12 /* FMDatabasePool.m in Sources */,
 				1507203E1CE321CE00A8D87D /* UserInfoModel.m in Sources */,
 				154447651CC07ABD00B32C12 /* FMDatabase.m in Sources */,
@@ -831,7 +837,6 @@
 				155576CA1CE040EC00AB0F7C /* PSMobileBookViewController.m in Sources */,
 				155576D81CE05C5400AB0F7C /* PSMobileBookUtil.m in Sources */,
 				154447541CC07A9F00B32C12 /* NSObject+MJCoding.m in Sources */,
-				150720301CE3175800A8D87D /* HttpBaseServe+PSMC.m in Sources */,
 				159F7A1D1D0EAB3300E3B4A2 /* AFDownloadRequestOperation.m in Sources */,
 				154447861CC0A44300B32C12 /* UIView+PS.m in Sources */,
 				155576EE1CE0695600AB0F7C /* PinyinFormatter.m in Sources */,
@@ -839,6 +844,7 @@
 				15BC067B1CBFA3F200CC34B7 /* PSMsgCenter.m in Sources */,
 				154447511CC07A9F00B32C12 /* MJPropertyKey.m in Sources */,
 				159F7A251D0EAB3300E3B4A2 /* AFURLResponseSerialization.m in Sources */,
+				15E63D9F1D17E9F6008617DB /* HttpBaseServer+PSMC.m in Sources */,
 				159F7A261D0EAB3300E3B4A2 /* AFURLSessionManager.m in Sources */,
 				155576C71CE02EE900AB0F7C /* NSString+PS.m in Sources */,
 				154447561CC07A9F00B32C12 /* NSObject+MJProperty.m in Sources */,
@@ -862,7 +868,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				840C79F31CBCEFE700309ECD /* PSGenericClassTests.m in Sources */,
-				150720311CE3175800A8D87D /* HttpBaseServe+PSMC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,7 +876,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				840C79FE1CBCEFE700309ECD /* PSGenericClassUITests.m in Sources */,
-				150720321CE3175800A8D87D /* HttpBaseServe+PSMC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

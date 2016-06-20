@@ -348,7 +348,7 @@
     //获取网络数据
     
     WeakSelf(ws);
-    [HttpBaseServeInstance getAllMobileContactListWithToken:@"xxx" block:^(NSDictionary *respone) {
+    [HttpServerInstance getAllMobileContactListWithToken:@"xxx" block:^(NSDictionary *respone, NSError *error, id userParam) {
         
         runBlockWithMain(^{
             
@@ -378,11 +378,10 @@
                 //请求失败
                 
             }
-
+            
         });
 
     }];
-    
     
 }
 
