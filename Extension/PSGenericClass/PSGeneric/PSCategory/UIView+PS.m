@@ -105,7 +105,6 @@
 }
 
 #pragma mark -Method-
-
 - (void)setLayerWithCr:(CGFloat)cornerRadius
 {
     self.layer.masksToBounds = YES; //没这句话它圆不起来
