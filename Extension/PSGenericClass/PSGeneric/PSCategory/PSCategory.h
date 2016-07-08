@@ -21,5 +21,6 @@
 #import "UIViewController+PS.h"
 #import "UIImage+PS.h"
 #import "UINavigationBar+PS.h"
+#import "UIControl+PS.h"
 
 #endif /* PSCategory_h */

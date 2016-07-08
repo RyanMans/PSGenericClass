@@ -13,6 +13,7 @@
 		1533AE861D0FA5B400041A9E /* UIImage+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533AE851D0FA5B400041A9E /* UIImage+PS.m */; };
 		1533AE8E1D0FE15D00041A9E /* UINavigationBar+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533AE8D1D0FE15D00041A9E /* UINavigationBar+PS.m */; };
 		1533AE911D0FF07900041A9E /* PSBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533AE901D0FF07900041A9E /* PSBottomBar.m */; };
+		153FD7CD1D2F7988004F304F /* UIControl+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = 153FD7CC1D2F7988004F304F /* UIControl+PS.m */; };
 		1544474E1CC07A9F00B32C12 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544473B1CC07A9F00B32C12 /* MJExtensionConst.m */; };
 		1544474F1CC07A9F00B32C12 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544473D1CC07A9F00B32C12 /* MJFoundation.m */; };
 		154447501CC07A9F00B32C12 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544473F1CC07A9F00B32C12 /* MJProperty.m */; };
@@ -123,6 +124,8 @@
 		1533AE8D1D0FE15D00041A9E /* UINavigationBar+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+PS.m"; sourceTree = "<group>"; };
 		1533AE8F1D0FF07900041A9E /* PSBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSBottomBar.h; sourceTree = "<group>"; };
 		1533AE901D0FF07900041A9E /* PSBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBottomBar.m; sourceTree = "<group>"; };
+		153FD7CB1D2F7988004F304F /* UIControl+PS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+PS.h"; sourceTree = "<group>"; };
+		153FD7CC1D2F7988004F304F /* UIControl+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+PS.m"; sourceTree = "<group>"; };
 		154447391CC07A9F00B32C12 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		1544473A1CC07A9F00B32C12 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
 		1544473B1CC07A9F00B32C12 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
@@ -367,6 +370,8 @@
 				15E63D911D17E810008617DB /* NSObject+PS.m */,
 				1533AE8C1D0FE15D00041A9E /* UINavigationBar+PS.h */,
 				1533AE8D1D0FE15D00041A9E /* UINavigationBar+PS.m */,
+				153FD7CB1D2F7988004F304F /* UIControl+PS.h */,
+				153FD7CC1D2F7988004F304F /* UIControl+PS.m */,
 				1533AE841D0FA5B400041A9E /* UIImage+PS.h */,
 				1533AE851D0FA5B400041A9E /* UIImage+PS.m */,
 				155576C51CE02EE900AB0F7C /* NSString+PS.h */,
@@ -807,6 +812,7 @@
 				1553C8B61D07FA1A007E1F1B /* PSlistViewController.m in Sources */,
 				1533AE8E1D0FE15D00041A9E /* UINavigationBar+PS.m in Sources */,
 				1533AE861D0FA5B400041A9E /* UIImage+PS.m in Sources */,
+				153FD7CD1D2F7988004F304F /* UIControl+PS.m in Sources */,
 				155576EC1CE0695600AB0F7C /* HanyuPinyinOutputFormat.m in Sources */,
 				154447571CC07A9F00B32C12 /* NSString+MJExtension.m in Sources */,
 				154447501CC07A9F00B32C12 /* MJProperty.m in Sources */,
