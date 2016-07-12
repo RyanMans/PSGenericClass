@@ -102,7 +102,6 @@
     }
 }
 
-
 #pragma mark -NSNotificationCenter-
 void addPost(id observer, SEL selector,NSString *name)
 {
@@ -123,5 +122,25 @@ void removePost(id observer,NSString *name)
     else{
         [[NSNotificationCenter defaultCenter] removeObserver:observer name:name object:nil];
     }
+}
+
+#pragma mark - GCD Thread -
+
+void runBlockWithMain(dispatch_block_t block)
+{
+    dispatch_async(dispatch_get_main_queue(), block);
+}
+
+void runBlockWithAsync(dispatch_block_t block)
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
+}
+
+void runBlock(dispatch_block_t asyncBlock, dispatch_block_t syncBlock)
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        asyncBlock();
+        dispatch_async(dispatch_get_main_queue(), syncBlock);
+    });
 }
 @end

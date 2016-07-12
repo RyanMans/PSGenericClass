@@ -10,25 +10,6 @@
 #import <Foundation/Foundation.h>
 #import "PSMethodTools.h"
 
-#pragma mark -线程-
-void runBlockWithMain(dispatch_block_t block)
-{
-    dispatch_async(dispatch_get_main_queue(), block);
-}
-
-void runBlockWithAsync(dispatch_block_t block)
-{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
-}
-
-void runBlock(dispatch_block_t asyncBlock, dispatch_block_t syncBlock)
-{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        asyncBlock();
-        dispatch_async(dispatch_get_main_queue(), syncBlock);
-    });
-}
-
 #pragma mark -MAC OR iphone-
 
 NSString *getVersion() {

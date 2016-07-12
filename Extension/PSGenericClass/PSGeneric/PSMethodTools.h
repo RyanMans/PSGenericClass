@@ -21,15 +21,6 @@ typedef void(^stringBlock) (NSString *respone);
 typedef void(^dictionaryBlock) (NSDictionary *respone);
 typedef void(^arrayBlock) (NSArray *respone);
 
-
-// 主线程
-void runBlockWithMain(dispatch_block_t block);
-// 异步线程
-void runBlockWithAsync(dispatch_block_t block);
-//先异步 后同步
-void runBlock(dispatch_block_t asyncBlock, dispatch_block_t syncBlock);
-
-
 /**
  *  获取系统版本
  *

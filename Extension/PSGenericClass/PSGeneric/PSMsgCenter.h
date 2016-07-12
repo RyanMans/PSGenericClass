@@ -84,4 +84,28 @@ void removePost(id observer,NSString *name);
  */
 void post(NSString *name,id object);
 
+#pragma mark - GCD Thread-
+
+/**
+ *  主线程
+ *
+ *  @param block
+ */
+void runBlockWithMain(dispatch_block_t block);
+
+/**
+ *  异步线程
+ *
+ *  @param block
+ */
+void runBlockWithAsync(dispatch_block_t block);
+
+/**
+ *  先异步 后同步
+ *
+ *  @param asyncBlock
+ *  @param syncBlock
+ */
+void runBlock(dispatch_block_t asyncBlock, dispatch_block_t syncBlock);
+
 @end
