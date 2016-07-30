@@ -12,7 +12,6 @@
 {
     NSFileManager * _fileManager;
 }
-@property (nonatomic, strong) dispatch_queue_t fileQueue;
 @end
 @implementation PSFileManager
 
@@ -255,16 +254,13 @@
     
     __block NSUInteger fileSize = 0;
     
-    dispatch_async(self.fileQueue, ^{
-        
-        NSDirectoryEnumerator *fileEnumerator = [_fileManager enumeratorAtPath:docPath];
-        for (NSString *fileName in fileEnumerator)
-        {
-            NSString *filePath = [docPath stringByAppendingPathComponent:fileName];
-            NSDictionary *attrs = [_fileManager attributesOfItemAtPath:filePath error:nil];
-            fileSize += [attrs fileSize];
-        }
-    });
+    NSDirectoryEnumerator *fileEnumerator = [_fileManager enumeratorAtPath:docPath];
+    for (NSString *fileName in fileEnumerator)
+    {
+        NSString *filePath = [docPath stringByAppendingPathComponent:fileName];
+        NSDictionary *attrs = [_fileManager attributesOfItemAtPath:filePath error:nil];
+        fileSize += [attrs fileSize];
+    }
     
     return fileSize;
 }
