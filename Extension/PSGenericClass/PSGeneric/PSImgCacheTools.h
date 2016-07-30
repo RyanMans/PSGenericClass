@@ -1,11 +1,10 @@
 //
 //  PSImgCacheTools.h
-//  PSGenericClass
+//  EJY3EDIT
 //
 //  Created by Ryan_Man on 16/6/17.
 //  Copyright © 2016年 Ryan_Man. All rights reserved.
 //
-
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -17,12 +16,18 @@
  */
 @interface PSImgCacheTools : NSObject
 @property (nonatomic,copy,readonly)NSString * imageCacheDir;
+
+/**
+ *  单列
+ *
+ *  @return
+ */
 + (PSImgCacheTools*)shared;
 
 /**
- *  传入自定义图片目录名
+ *  初始化PSImgCacheTools
  *
- *  @param cacheDir 不可为nil
+ *  @param cacheDir 使用自定义缓存目录,如果为Nil,则使用默认缓存目录imageCache
  *
  *  @return
  */
@@ -65,7 +70,14 @@
 - (void)saveCacheImage:(UIImage*)image url:(NSString*)url;
 
 /**
- *  清空图片缓存
+ *  清空图片缓存(单个文件夹)
  */
 - (void)cleanImageCache;
+
+/**
+ *  清空图片缓存(全部文件夹)
+ */
+- (void)cleanAllImageCache;
+
 @end
+
