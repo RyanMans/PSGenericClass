@@ -1,30 +1,21 @@
 //
 //  PSFileManager.h
-//  PSGenericClass
+//  NetEase
 //
-//  Created by Ryan_Man on 16/6/17.
-//  Copyright © 2016年 Ryan_Man. All rights reserved.
+//  Created by ibos on 15/8/26.
+//  Copyright (c) 2015年 ps. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-// 简写log宏
-#ifdef  DEBUG
-#define PSLog(...)  NSLog(__VA_ARGS__)
-#else
-#define PSLog(...)
-
-#endif
-
-#define PSFileManagerInStance    [PSFileManager getInstance]
-
+#define PSFileManagerInStance    [PSFileManager shareInstance]
 /**
- *  文件管理类库，提供文件的创建 删 存等常用方法
+ *  文件管理
  */
-
 @interface PSFileManager : NSObject
 
-+ (PSFileManager*)getInstance;
++ (PSFileManager*)shareInstance;
 
 /**
  *  获取Caches目录路径
@@ -187,14 +178,33 @@
  *  存值
  *
  *  @param value
- *  @param key   
+ *  @param key
  */
 - (void)UserDefaultsSetValue:(id)value forKey:(NSString*)key;
 /**
  *  删值
  *
- *  @param key 
+ *  @param key
  */
 - (void)UserDefaultsRemoveObjectForKey:(NSString*)key;
 
+#pragma mark - Calculate file Size -
+
+/**
+ *  计算单个文件大小
+ *
+ *  @param cachePath 文件路径
+ *
+ *  @return
+ */
+- (NSUInteger)fileSizeWithCachePath:(NSString*)cachePath;
+
+/**
+ *  计算整个文件夹大小
+ *
+ *  @param docPath  文件夹路径
+ *
+ *  @return
+ */
+- (NSUInteger)fileSizeWithDocPath:(NSString*)docPath;
 @end
