@@ -10,9 +10,11 @@
 #import "PSBottomBar.h"
 #define Max_OffsetY  50
 
+#import "PSContactViewController.h"
 @interface PSInfoViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate,UIActionSheetDelegate>
 {
     CGFloat _lastPosition;
+    BOOL _isViewDisAppear;
 }
 @property (nonatomic,strong)PSBottomBar * bottomBar;
 @property (nonatomic,strong)UIImageView * avatarView;
@@ -123,16 +125,42 @@
 #pragma mark --
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewWillAppear:NO];
     
+    LogFunctionName();
+    
+    [self.navigationController.navigationBar isRset:YES];
     [self scrollViewDidScroll:self.displayTableView];
-    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+
+//    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
 }
+- (void)viewDidAppear:(BOOL)animated
+{
+    LogFunctionName();
+
+    [super viewDidAppear:NO];
+    
+//    _isViewDisAppear = YES;
+//    [self scrollViewDidScroll:self.displayTableView];
+
+
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    _isViewDisAppear = NO;
+
     [self.navigationController.navigationBar ps_reset];
+
+}
+- (void)viewDidDisappear:(BOOL)animated
+{
+    
+    [super viewDidDisappear:animated];
+//    [self.navigationController.navigationBar ps_reset];
+
 }
 
 - (void)viewDidLoad
@@ -224,6 +252,10 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    
+    PSContactViewController * tempVC = NewClass(PSContactViewController);
+    [self.navigationController pushViewController:tempVC animated:YES];
+    
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -253,8 +285,12 @@
     
     //2.处理导航颜色渐变  3.底部工具栏动画
 
-    if (offset_Y > Max_OffsetY) 
+//    if (_isViewDisAppear == NO) {
+//        return;
+//    }
+    if (offset_Y > Max_OffsetY)
     {
+        
         CGFloat alpha = MIN(1, 1 - ((Max_OffsetY + INVALID_VIEW_HEIGHT - offset_Y) / INVALID_VIEW_HEIGHT));
         
         [self.navigationController.navigationBar ps_setBackgroundColor:[NavigationBarBGColor colorWithAlphaComponent:alpha]];

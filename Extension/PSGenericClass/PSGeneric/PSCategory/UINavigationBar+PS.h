@@ -15,4 +15,7 @@
 - (void)ps_setTranslationY:(CGFloat)translationY;
 - (void)ps_setTransformIdentity;
 - (void)ps_reset;
+
+- (void)isRset:(BOOL)rest;
+
 @end

@@ -11,6 +11,7 @@
 
 @implementation UINavigationBar (PS)
 
+BOOL _isRSet;
 static char overlayerkey;
 
 - (UIView*)overlayer
@@ -24,9 +25,14 @@ static char overlayerkey;
 }
 
 #pragma mark --
+- (void)isRset:(BOOL)rest
+{
+    _isRSet = rest;
+}
+
 - (void)ps_setBackgroundColor:(UIColor *)backgroundColor
 {
-    if (!self.overlayer)
+    if (!self.overlayer && _isRSet == YES)
     {
         [self setBackgroundImage:[UIImage new] forBarMetrics:(UIBarMetricsDefault)];
         
@@ -73,8 +79,11 @@ static char overlayerkey;
 
 - (void)ps_reset
 {
+    _isRSet = NO;
     [self setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     [self.overlayer removeFromSuperview];
      self.overlayer = nil;
+    
+    [self  setBarTintColor:NavigationBarBGColor];
 }
 @end
